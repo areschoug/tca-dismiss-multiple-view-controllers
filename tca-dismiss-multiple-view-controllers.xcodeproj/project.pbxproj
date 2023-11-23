@@ -10,13 +10,13 @@
 		E1068C152B0E56F900A11299 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1068C142B0E56F900A11299 /* ViewControllerB.swift */; };
 		E1068C172B0E598D00A11299 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1068C162B0E598D00A11299 /* Id.swift */; };
 		E125B9AD2B0F3D10007DD75A /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125B9AC2B0F3D10007DD75A /* ViewControllerC.swift */; };
+		E1744D8F2B0F48BA00BA6ADD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E1744D8E2B0F48BA00BA6ADD /* ComposableArchitecture */; };
 		E1BE59A42B0E4B86007938D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE59A32B0E4B86007938D7 /* AppDelegate.swift */; };
 		E1BE59A62B0E4B86007938D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE59A52B0E4B86007938D7 /* SceneDelegate.swift */; };
 		E1BE59A82B0E4B86007938D7 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE59A72B0E4B86007938D7 /* ViewControllerA.swift */; };
 		E1BE59AB2B0E4B86007938D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BE59A92B0E4B86007938D7 /* Main.storyboard */; };
 		E1BE59AD2B0E4B88007938D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE59AC2B0E4B88007938D7 /* Assets.xcassets */; };
 		E1BE59B02B0E4B88007938D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BE59AE2B0E4B88007938D7 /* LaunchScreen.storyboard */; };
-		E1BE59B92B0E4D06007938D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E1BE59B82B0E4D06007938D7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BE59B92B0E4D06007938D7 /* ComposableArchitecture in Frameworks */,
+				E1744D8F2B0F48BA00BA6ADD /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			);
 			name = "tca-dismiss-multiple-view-controllers";
 			packageProductDependencies = (
-				E1BE59B82B0E4D06007938D7 /* ComposableArchitecture */,
+				E1744D8E2B0F48BA00BA6ADD /* ComposableArchitecture */,
 			);
 			productName = "tca-dismiss-multiple-view-controllers";
 			productReference = E1BE59A02B0E4B86007938D7 /* tca-dismiss-multiple-view-controllers.app */;
@@ -126,7 +126,7 @@
 			);
 			mainGroup = E1BE59972B0E4B86007938D7;
 			packageReferences = (
-				E1BE59B72B0E4D06007938D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				E1744D8D2B0F48BA00BA6ADD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = E1BE59A12B0E4B86007938D7 /* Products */;
 			projectDirPath = "";
@@ -385,20 +385,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E1BE59B72B0E4D06007938D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		E1744D8D2B0F48BA00BA6ADD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			repositoryURL = "https://github.com/oskarek/swift-composable-architecture";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.2;
+				branch = invalidate;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E1BE59B82B0E4D06007938D7 /* ComposableArchitecture */ = {
+		E1744D8E2B0F48BA00BA6ADD /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E1BE59B72B0E4D06007938D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = E1744D8D2B0F48BA00BA6ADD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */

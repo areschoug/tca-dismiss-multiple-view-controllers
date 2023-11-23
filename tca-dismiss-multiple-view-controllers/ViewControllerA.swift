@@ -95,7 +95,9 @@ class ViewControllerA: UIViewController {
 				switch destinationState.wrappedValue {
 				case .featureB(let state):
 					let viewControllerB = ViewControllerB(
-						store: self.store.scope(state: {
+						store: self.store.invalidate {
+							$0.destination?.featureB == nil
+						}.scope(state: {
 							$0.destination?.featureB ?? state
 						}, action: { childAction in
 							.destination(.presented(.featureB(childAction)))
